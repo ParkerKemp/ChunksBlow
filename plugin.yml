@@ -1,0 +1,10 @@
+name: ChunksBlow
+main: com.spinalcraft.chunksblow.ChunksBlow
+version: 1.0
+
+commands:
+  chunk:
+    description: Manipulate chunks to be deleted.
+    usage: Usage - /rules
+    permission: spinalpack.chunk
+    permission-message: No!

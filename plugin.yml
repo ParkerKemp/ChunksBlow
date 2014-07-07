@@ -5,6 +5,6 @@ version: 1.0
 commands:
   chunk:
     description: Manipulate chunks to be deleted.
-    usage: Usage - /rules
+    usage: Usage - /chunk <report | unreport>
     permission: spinalpack.chunk
     permission-message: No!

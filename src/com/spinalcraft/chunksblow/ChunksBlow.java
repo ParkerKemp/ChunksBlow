@@ -1,10 +1,5 @@
 package com.spinalcraft.chunksblow;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.Scanner;
-
 import org.bukkit.Bukkit;
 import org.bukkit.Chunk;
 import org.bukkit.command.Command;
@@ -39,7 +34,7 @@ public class ChunksBlow extends JavaPlugin{
 				if(args[0].equalsIgnoreCase("report")){
 					if(sender instanceof Player){
 						Player player = (Player)sender;
-						
+						console.sendMessage(Spinalpack.code(Co.GOLD) + "Player coords: (" + player.getLocation().getX() + ", " + player.getLocation().getZ() + ")");
 						Chunk chunk = player.getLocation().getChunk();
 						
 						switch(Spinalpack.insertReportedChunk(player.getName(), chunk.getWorld().getName(), chunk.getX(), chunk.getZ())){
@@ -86,39 +81,4 @@ public class ChunksBlow extends JavaPlugin{
 	public void onDisable(){
 		
 	}
-	
-	/*private void sendChunkList(CommandSender sender){
-		ArrayList<Chunk> chunks = getChunkList();
-		
-		sender.sendMessage("" + chunks.size() + " chunks:");
-		sender.sendMessage("");
-		
-		sender.sendMessage(formattedChunkList(chunks));
-	}
-	
-	private String formattedChunkList(ArrayList<Chunk> chunks){
-		String ret = new String();
-		for(int i = 0; i < chunks.size(); i++){
-			ret = ret + i + ". (" + chunks.get(i).x + ", " + chunks.get(i).y + ")\n";
-		}
-		return ret;
-	}
-	
-	private ArrayList<Chunk> getChunkList(){
-		ArrayList<Chunk> chunks = new ArrayList<Chunk>();
-		try {
-			Scanner scanner = new Scanner(new File(System.getProperty("user.dir") + "/plugins/Spinalpack/chunks.txt"));
-			while(scanner.hasNextInt()){
-				int x = scanner.nextInt();
-				int y = scanner.nextInt();
-				chunks.add(new Chunk(x, y));
-			}
-			scanner.close();
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		return chunks;
-	}*/
 }

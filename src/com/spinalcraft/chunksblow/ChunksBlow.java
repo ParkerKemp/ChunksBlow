@@ -1,5 +1,8 @@
 package com.spinalcraft.chunksblow;
 
+import main.java.com.spinalcraft.spinalpack.Spinalpack;
+import main.java.com.spinalcraft.spinalpack.Co;
+
 import org.bukkit.Bukkit;
 import org.bukkit.Chunk;
 import org.bukkit.command.Command;
@@ -7,9 +10,6 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
-
-import com.spinalcraft.spinalpack.Co;
-import com.spinalcraft.spinalpack.Spinalpack;
 
 public class ChunksBlow extends JavaPlugin{
 	

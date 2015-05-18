@@ -1,7 +1,7 @@
 package com.spinalcraft.chunksblow;
 
-import main.java.com.spinalcraft.spinalpack.Spinalpack;
-import main.java.com.spinalcraft.spinalpack.Co;
+import com.spinalcraft.spinalpack.Spinalpack;
+import com.spinalcraft.spinalpack.Co;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Chunk;

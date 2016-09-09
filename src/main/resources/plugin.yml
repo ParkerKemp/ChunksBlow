@@ -2,6 +2,8 @@ name: ChunksBlow
 main: com.spinalcraft.chunksblow.ChunksBlow
 version: 1.0
 
+depend: [Spinalpack]
+
 commands:
   chunk:
     description: Manipulate chunks to be deleted.

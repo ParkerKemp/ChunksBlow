@@ -22,7 +22,6 @@ public class ChunksBlow extends SpinalcraftPlugin{
 	public void onEnable(){
 		console = Bukkit.getConsoleSender();
 		
-		console.sendMessage(ChatColor.BLUE + "ChunksBlow online!");
 		createChunkTable();
 	}
 	

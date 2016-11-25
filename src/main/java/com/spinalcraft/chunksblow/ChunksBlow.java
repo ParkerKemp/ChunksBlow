@@ -20,6 +20,7 @@ public class ChunksBlow extends SpinalcraftPlugin{
 	
 	@Override
 	public void onEnable(){
+		super.onEnable();
 		console = Bukkit.getConsoleSender();
 		
 		createChunkTable();
